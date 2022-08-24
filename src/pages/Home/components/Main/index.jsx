@@ -57,7 +57,7 @@ const Main = () => (
     <Container_4>
       <div>
         {cards.map((item, i) => (
-          <section key={i}>
+          <section className={`section-${i}`} key={i}>
             <img src={item[0]} alt={`card ${i}`} />
             <h3>{item[1]}</h3>
             <p>{item[2]}</p>
@@ -71,7 +71,7 @@ const Main = () => (
       <div className="container">
         <div className="content">
           {cards_2.map((item, i) => (
-            <section key={i}>
+            <section className={`section-${i}`} key={i}>
               <img src={item[0]} alt={`card ${i}`} />
               <h3>{item[1]}</h3>
               <p>{item[2]}</p>

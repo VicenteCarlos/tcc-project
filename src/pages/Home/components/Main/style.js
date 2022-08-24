@@ -93,7 +93,7 @@ const Container_4 = styled.section`
   justify-content: center;
   align-items: center;
   background-color: #1e1d1d;
-  height: 85vh;
+  height: 110vh;
 
   div {
     display: flex;
@@ -102,8 +102,8 @@ const Container_4 = styled.section`
       background-image: linear-gradient(to right, #1c1f1e, #2d3530);
       border-radius: 30px;
       width: 300px;
-      height: 370px;
-      margin: 0 20px;
+      height: 300px;
+      margin: 0 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -113,6 +113,7 @@ const Container_4 = styled.section`
       h3 {
         width: 70%;
         color: white;
+        font-size: 20px;
       }
 
       img {
@@ -124,6 +125,12 @@ const Container_4 = styled.section`
         width: 70%;
       }
     }
+
+    .section-1 {
+      p {
+        font-size: 12px;
+      }
+    }
   }
 
   button {
@@ -132,10 +139,9 @@ const Container_4 = styled.section`
     border: 2px solid transparent;
     background-color: #45a85b;
     color: white;
-    padding: 20px;
-    width: 280px;
+    width: 230px;
     height: 65px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
   }
@@ -173,8 +179,8 @@ const Container_5 = styled.section`
       section {
         background-image: linear-gradient(to right, #2d3530, #1c1f1e);
         border-radius: 30px;
-        width: 300px;
-        height: 370px;
+        width: 250px;
+        height: 300px;
         margin: 20px 20px;
         display: flex;
         flex-direction: column;
@@ -189,10 +195,12 @@ const Container_5 = styled.section`
 
         h3 {
           color: white;
+          font-size: 18px;
         }
 
         p {
           width: 70%;
+          font-size: 15px;
         }
       }
     }
@@ -201,6 +209,7 @@ const Container_5 = styled.section`
       img {
         width: 560px;
         height: 530px;
+        border-radius: 100%;
       }
     }
   }
@@ -208,15 +217,16 @@ const Container_5 = styled.section`
 
 const Container_6 = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background-color: white;
   color: black;
-  height: 90vh;
+  height: 130vh;
 
   h2 {
     font-size: 40px;
+    margin-top: 100px;
   }
 
   .container {
@@ -263,8 +273,12 @@ const Container_6 = styled.section`
         background-color: #45a85b;
       }
 
-      .bt-1, .bt-3 {
-        margin-top: 85px;
+      .bt-1 {
+        margin-top: 110px;
+      }
+
+      .bt-3 {
+        margin-top: 150px;
       }
     }
   }
