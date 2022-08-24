@@ -257,11 +257,15 @@ const Container_6 = styled.section`
       }
 
       .bt-1 {
-        margin-top: 73px;
+        margin-top: 83px;
+      }
+
+      .bt-2 {
+        margin-top: 38px;
       }
 
       .bt-3 {
-        margin-top: 67px;
+        margin-top: 79px;
       }
     }
   }
