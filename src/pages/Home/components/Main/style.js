@@ -222,7 +222,7 @@ const Container_6 = styled.section`
   flex-direction: column;
   background-color: white;
   color: black;
-  height: 130vh;
+  height: 85vh;
 
   h2 {
     font-size: 40px;
@@ -273,16 +273,20 @@ const Container_6 = styled.section`
         background-color: #45a85b;
       }
 
+      .bt-0 {
+        margin-top: 27px;
+      }
+
       .bt-1 {
-        margin-top: 83px;
+        margin-top: 90px;
       }
 
       .bt-2 {
-        margin-top: 38px;
+        margin-top: 23px;
       }
 
       .bt-3 {
-        margin-top: 79px;
+        margin-top: 85px;
       }
     }
   }

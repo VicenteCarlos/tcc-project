@@ -13,14 +13,14 @@ const HeaderStyled = styled.header`
 
     img {
       margin: 0 25px;
-      width: 40px;
-      height: 40px;
+      width: 70px;
+      height: 70px;
     }
 
     figcaption {
       margin: 0 5px;
       font-weight: bold;
-      font-size: 15px;
+      font-size: 25px;
 
       strong {
         color: #52b788;
@@ -36,6 +36,7 @@ const HeaderStyled = styled.header`
 
       li {
         list-style-type: none;
+        font-size: 20px;
         margin: 0 14px;
         color: gray;
         padding: 9px;
@@ -58,6 +59,7 @@ const HeaderStyled = styled.header`
       padding: 7px;
       margin-top: 31.5px;
       font-weight: bold;
+      font-size: 20px;
       color: white;
       cursor: pointer;
     }
