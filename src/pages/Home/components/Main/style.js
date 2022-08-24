@@ -93,7 +93,7 @@ const Container_4 = styled.section`
   justify-content: center;
   align-items: center;
   background-color: #1e1d1d;
-  height: 110vh;
+  height: 80vh;
 
   div {
     display: flex;
