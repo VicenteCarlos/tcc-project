@@ -10,7 +10,7 @@ const cards = [
     "Garanta uma previsibilidade financeira cadastrando seus gastos fixos, planeje e crie metas para alcançar seus sonhos.",
   ],
   [
-    "https://img.icons8.com/avantgarde/344/pig.png",
+    "https://img.icons8.com/office/344/pig.png",
     "Saiba o destino de cada centavo",
     "Mantenha tudo sob controle informando sua renda e ganhos extras",
   ],
@@ -23,7 +23,7 @@ const cards = [
 
 const cards_2 = [
   [
-    "https://img.icons8.com/avantgarde/344/pig.png",
+    "https://img.icons8.com/office/344/pig.png",
     "Controle de contas",
     "Gerencie todas as suas contas, boletos e extratos.",
   ],
@@ -45,4 +45,27 @@ const cards_2 = [
   ,
 ];
 
-export { cards, cards_2 };
+const cards_3 = [
+  [
+    "https://cdn.discordapp.com/attachments/1008067136872255560/1011986109481361428/Rectangle_3580.png",
+    "Gestão financira",
+    "Apreda tudo sobre gestão financeira e os melhores métodos para guardar seu dinheiro.",
+  ],
+  [
+    "https://cdn.discordapp.com/attachments/1008067136872255560/1011986108302774302/Rectangle_3580-1.png",
+    "Ganhar dinheiro",
+    "Veja 5 formas de ganhar dinheiro.",
+  ],
+  [
+    "https://cdn.discordapp.com/attachments/1008067136872255560/1011986108634120274/Rectangle_3580-2.png",
+    "32 gastos que dão direito à restituição do imposto de renda",
+    "Confira quais os gastos podem ser deduzidos.",
+  ],
+  [
+    "https://cdn.discordapp.com/attachments/1008067136872255560/1011986108965454005/Rectangle_3580-3.png",
+    "Cartão de cŕedito",
+    "Aprenda tudo sobre gestão financeira e seus melhores métodos",
+  ],
+];
+
+export { cards, cards_2, cards_3 };

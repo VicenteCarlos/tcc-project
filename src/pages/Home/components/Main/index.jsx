@@ -4,10 +4,11 @@ import {
   Container_3,
   Container_4,
   Container_5,
+  Container_6,
 } from "./style";
 import { variants } from "./variants";
 import { motion } from "framer-motion";
-import { cards, cards_2 } from "../../../../assets/mocks";
+import { cards, cards_2, cards_3 } from "../../../../assets/mocks";
 
 const Main = () => (
   <main>
@@ -85,6 +86,19 @@ const Main = () => (
         </div>
       </div>
     </Container_5>
+    <Container_6>
+      <h2>Aprenda sobre finanças</h2>
+      <div className="container">
+        {cards_3.map((item, i) => (
+          <section key={i}>
+            <img src={item[0]} alt={`card ${i}`} />
+            <h3>{item[1]}</h3>
+            <p>{item[2]}</p>
+            <button className={`bt-${i}`}>Saiba mais</button>
+          </section>
+        ))}
+      </div>
+    </Container_6>
   </main>
 );
 
