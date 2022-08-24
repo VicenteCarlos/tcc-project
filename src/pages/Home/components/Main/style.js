@@ -9,6 +9,7 @@ const Container_1 = styled.section`
   .left-part {
     h1 {
       font-weight: bold;
+      color: white;
       width: 330px;
       line-height: 50px;
     }
