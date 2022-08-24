@@ -12,7 +12,7 @@ const HeaderStyled = styled.header`
     justify-content: center;
 
     img {
-      margin: 0 15px;
+      margin: 0 25px;
       width: 40px;
       height: 40px;
     }
@@ -29,7 +29,7 @@ const HeaderStyled = styled.header`
   }
 
   nav {
-    margin-top: 13.2px;
+    margin-top: 24.3px;
 
     ul {
       display: flex;
