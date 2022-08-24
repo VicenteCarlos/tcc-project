@@ -102,7 +102,7 @@ const Container_4 = styled.section`
       background-image: linear-gradient(to right, #1c1f1e, #2d3530);
       border-radius: 30px;
       width: 300px;
-      height: 330px;
+      height: 370px;
       margin: 0 20px;
       display: flex;
       flex-direction: column;
@@ -112,6 +112,7 @@ const Container_4 = styled.section`
 
       h3 {
         width: 70%;
+        color: white;
       }
 
       img {
@@ -156,6 +157,7 @@ const Container_5 = styled.section`
 
   h2 {
     font-size: 40px;
+    color: white;
   }
 
   .container {
@@ -172,7 +174,7 @@ const Container_5 = styled.section`
         background-image: linear-gradient(to right, #2d3530, #1c1f1e);
         border-radius: 30px;
         width: 300px;
-        height: 330px;
+        height: 370px;
         margin: 20px 20px;
         display: flex;
         flex-direction: column;
@@ -183,6 +185,10 @@ const Container_5 = styled.section`
         img {
           width: 45px;
           height: 45px;
+        }
+
+        h3 {
+          color: white;
         }
 
         p {
@@ -207,7 +213,7 @@ const Container_6 = styled.section`
   flex-direction: column;
   background-color: white;
   color: black;
-  padding-top: 70px;
+  height: 90vh;
 
   h2 {
     font-size: 40px;
@@ -257,17 +263,12 @@ const Container_6 = styled.section`
         background-color: #45a85b;
       }
 
-      .bt-1 {
-        margin-top: 73px;
-      }
-
-      .bt-3 {
-        margin-top: 67px;
+      .bt-1, .bt-3 {
+        margin-top: 85px;
       }
     }
   }
 `;
-
 
 export {
   Container_1,
