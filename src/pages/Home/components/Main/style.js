@@ -27,6 +27,7 @@ const Container_1 = styled.section`
       color: white;
       cursor: pointer;
       font-weight: bold;
+      font-size: 17px;
       margin-top: 40px;
       padding: 7px;
     }
