@@ -98,10 +98,10 @@ const Container_4 = styled.section`
     display: flex;
 
     section {
-      background-image: linear-gradient(to right, #2d3530, #1c1f1e);
+      background-image: linear-gradient(to right, #1c1f1e, #2d3530);
       border-radius: 30px;
-      width: 290px;
-      height: 280px;
+      width: 300px;
+      height: 330px;
       margin: 0 20px;
       display: flex;
       flex-direction: column;
@@ -111,6 +111,11 @@ const Container_4 = styled.section`
 
       h3 {
         width: 70%;
+      }
+
+      img {
+        width: 45px;
+        height: 45px;
       }
 
       p {
@@ -123,9 +128,11 @@ const Container_4 = styled.section`
     margin-top: 54px;
     border-radius: 15px;
     border: 2px solid transparent;
-    background-color: #45A85B;
+    background-color: #45a85b;
     color: white;
     padding: 20px;
+    width: 280px;
+    height: 65px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -133,13 +140,64 @@ const Container_4 = styled.section`
 
   button:hover {
     transition: 0.7s;
-    color: #45A85B;
-    border-color: #45A85B;
-    background-color: #1E1D1D;
+    color: #45a85b;
+    border-color: #45a85b;
+    background-color: #1e1d1d;
   }
 `;
 
-const Container_5 = styled.section``;
+const Container_5 = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 60px 0;
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .container {
+    display: flex;
+    margin-top: 30px;
+
+    .content {
+      margin: 0 50px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 750px;
+
+      section {
+        background-image: linear-gradient(to right, #2d3530, #1c1f1e);
+        border-radius: 30px;
+        width: 300px;
+        height: 330px;
+        margin: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
+
+        p {
+          width: 70%;
+        }
+      }
+    }
+
+    .content-2 {
+      img {
+        width: 560px;
+        height: 530px;
+      }
+    }
+  }
+`;
 
 const Container_6 = styled.section``;
 

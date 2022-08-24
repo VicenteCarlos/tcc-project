@@ -1,7 +1,13 @@
-import { Container_1, Container_2, Container_3, Container_4 } from "./style";
+import {
+  Container_1,
+  Container_2,
+  Container_3,
+  Container_4,
+  Container_5,
+} from "./style";
 import { variants } from "./variants";
 import { motion } from "framer-motion";
-import { cards } from "../../../../assets/mocks";
+import { cards, cards_2 } from "../../../../assets/mocks";
 
 const Main = () => (
   <main>
@@ -50,15 +56,35 @@ const Main = () => (
     <Container_4>
       <div>
         {cards.map((item, i) => (
-          <section data-aos="fade-up">
-            <img src="#" alt={`card ${i}`} />
-            <h3>{item[0]}</h3>
-            <p>{item[1]}</p>
+          <section key={i}>
+            <img src={item[0]} alt={`card ${i}`} />
+            <h3>{item[1]}</h3>
+            <p>{item[2]}</p>
           </section>
         ))}
       </div>
       <button>Cadastre-se</button>
     </Container_4>
+    <Container_5>
+      <h2>O que oferecemos?</h2>
+      <div className="container">
+        <div className="content">
+          {cards_2.map((item, i) => (
+            <section key={i}>
+              <img src={item[0]} alt={`card ${i}`} />
+              <h3>{item[1]}</h3>
+              <p>{item[2]}</p>
+            </section>
+          ))}
+        </div>
+        <div className="content-2">
+          <img
+            src="https://cdn.discordapp.com/attachments/1008067136872255560/1011985107151757332/Group_56069.png"
+            alt="Dashboard"
+          />
+        </div>
+      </div>
+    </Container_5>
   </main>
 );
 
