@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MediaQuery } from "../../../../assets/mocks";
 
 const Container_1 = styled.section`
   display: flex;
@@ -9,6 +10,7 @@ const Container_1 = styled.section`
   .left-part {
     h1 {
       font-weight: bold;
+      color: white;
       width: 330px;
       line-height: 50px;
     }
@@ -26,6 +28,7 @@ const Container_1 = styled.section`
       color: white;
       cursor: pointer;
       font-weight: bold;
+      font-size: 17px;
       margin-top: 40px;
       padding: 7px;
     }
@@ -46,6 +49,42 @@ const Container_1 = styled.section`
       height: 350px;
       border-radius: 100%;
       margin-bottom: 25%;
+    }
+  }
+
+  ${MediaQuery.mobile_320} {
+    height: 70vh;
+    margin:  0;
+
+    .left-part {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        font-size: 23px;
+        width: 60%;
+        line-height: 40px;
+        text-align: center;
+        /* padding: 0;
+        margin: 0 auto;
+        padding-right: 12.5%; */
+      }
+
+      p {
+        width: 90%;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      button {
+        /* padding-left: 12.5%; */
+      }
+    }
+
+    .rigth-part {
+      display: none;
     }
   }
 `;
@@ -71,6 +110,22 @@ const Container_2 = styled.section`
     font-size: 18px;
     text-align: center;
   }
+
+  ${MediaQuery.mobile_320} {
+    height: 90vh;
+    justify-content: flex-start;
+
+    h2 {
+      font-size: 20px;
+      width: 60vw;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    p {
+      width: 60wv;
+    }
+  }
 `;
 
 const Container_3 = styled.section`
@@ -84,6 +139,10 @@ const Container_3 = styled.section`
     height: 450px;
     border-radius: 15%;
   }
+
+  ${MediaQuery.mobile_320} {
+    display: none;
+  }
 `;
 
 const Container_4 = styled.section`
@@ -92,7 +151,7 @@ const Container_4 = styled.section`
   justify-content: center;
   align-items: center;
   background-color: #1e1d1d;
-  height: 85vh;
+  height: 80vh;
 
   div {
     display: flex;
@@ -101,8 +160,8 @@ const Container_4 = styled.section`
       background-image: linear-gradient(to right, #1c1f1e, #2d3530);
       border-radius: 30px;
       width: 300px;
-      height: 330px;
-      margin: 0 20px;
+      height: 500px;
+      margin: 0 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -111,6 +170,8 @@ const Container_4 = styled.section`
 
       h3 {
         width: 70%;
+        color: white;
+        font-size: 20px;
       }
 
       img {
@@ -122,6 +183,12 @@ const Container_4 = styled.section`
         width: 70%;
       }
     }
+
+    .section-1 {
+      p {
+        font-size: 12px;
+      }
+    }
   }
 
   button {
@@ -130,10 +197,9 @@ const Container_4 = styled.section`
     border: 2px solid transparent;
     background-color: #45a85b;
     color: white;
-    padding: 20px;
-    width: 280px;
+    width: 230px;
     height: 65px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
   }
@@ -143,6 +209,36 @@ const Container_4 = styled.section`
     color: #45a85b;
     border-color: #45a85b;
     background-color: #1e1d1d;
+  }
+
+  ${MediaQuery.mobile_320} {
+    height: 360vh;
+
+    div {
+      flex-direction: column;
+
+      section {
+        width: 80vw;
+        height: 70vh;
+        margin: 20px 0;
+
+        h3 {
+          font-size: 22px;
+          width: 70%;
+        }
+
+        p {
+          font-size: 17px;
+          width: 70%;
+        }
+      }
+
+      .section-1 {
+          p {
+            font-size: 15px;
+          }
+        }
+    }
   }
 `;
 
@@ -155,6 +251,7 @@ const Container_5 = styled.section`
 
   h2 {
     font-size: 40px;
+    color: white;
   }
 
   .container {
@@ -170,8 +267,8 @@ const Container_5 = styled.section`
       section {
         background-image: linear-gradient(to right, #2d3530, #1c1f1e);
         border-radius: 30px;
-        width: 300px;
-        height: 330px;
+        width: 250px;
+        height: 300px;
         margin: 20px 20px;
         display: flex;
         flex-direction: column;
@@ -184,8 +281,14 @@ const Container_5 = styled.section`
           height: 45px;
         }
 
+        h3 {
+          color: white;
+          font-size: 18px;
+        }
+
         p {
           width: 70%;
+          font-size: 15px;
         }
       }
     }
@@ -194,6 +297,47 @@ const Container_5 = styled.section`
       img {
         width: 560px;
         height: 530px;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  ${MediaQuery.mobile_320} {
+    justify-content: flex-start;
+    height: 280vh;
+    flex-wrap: nowrap;
+
+    h2 {
+      font-size: 30px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .container {
+      margin: 40px 0;
+      width: 100vw;
+
+      .content {
+        flex-direction: column;
+        margin: 0;
+
+        section {
+          width: 80vw;
+          height: 350px;
+          margin: 20px auto;
+
+          h3 {
+            font-size: 22px;
+          }
+
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+
+      .content-2 {
+        display: none;
       }
     }
   }
@@ -201,16 +345,16 @@ const Container_5 = styled.section`
 
 const Container_6 = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background-color: white;
   color: black;
   padding-top: 70px;
-  height: 100vh;
 
   h2 {
     font-size: 40px;
+    margin-top: 100px;
   }
 
   .container {
@@ -257,21 +401,41 @@ const Container_6 = styled.section`
         background-color: #45a85b;
       }
 
+      .bt-0 {
+        margin-top: 27px;
+      }
+
       .bt-1 {
-        margin-top: 83px;
+        margin-top: 90px;
       }
 
       .bt-2 {
-        margin-top: 38px;
+        margin-top: 23px;
       }
 
       .bt-3 {
-        margin-top: 79px;
+        margin-top: 85px;
+      }
+    }
+  }
+
+  ${MediaQuery.mobile_320} {
+    height: 320vh;
+
+    h2 {
+      text-align: center;
+    }
+
+    .container {
+      flex-direction: column;
+
+      section {
+        width: 80vw;
+        margin: 50px 0;
       }
     }
   }
 `;
-
 
 export {
   Container_1,
