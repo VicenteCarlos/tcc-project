@@ -53,7 +53,8 @@ const Container_1 = styled.section`
   }
 
   ${MediaQuery.mobile_320} {
-    height: 60vh;
+    height: 70vh;
+    margin:  0;
 
     .left-part {
       display: flex;
@@ -111,13 +112,14 @@ const Container_2 = styled.section`
   }
 
   ${MediaQuery.mobile_320} {
-    height: 70vh;
+    height: 90vh;
+    justify-content: flex-start;
 
     h2 {
       font-size: 20px;
       width: 60vw;
       text-align: center;
-      margin-top: 40px;
+      margin-top: 30px;
     }
 
     p {
@@ -158,7 +160,7 @@ const Container_4 = styled.section`
       background-image: linear-gradient(to right, #1c1f1e, #2d3530);
       border-radius: 30px;
       width: 300px;
-      height: 300px;
+      height: 500px;
       margin: 0 10px;
       display: flex;
       flex-direction: column;
@@ -210,14 +212,14 @@ const Container_4 = styled.section`
   }
 
   ${MediaQuery.mobile_320} {
-    height: 260vh;
+    height: 360vh;
 
     div {
       flex-direction: column;
 
       section {
         width: 80vw;
-        height: 50vh;
+        height: 70vh;
         margin: 20px 0;
 
         h3 {
@@ -301,10 +303,9 @@ const Container_5 = styled.section`
   }
 
   ${MediaQuery.mobile_320} {
-    height: 190vh;
-    margin-top: 190px;
+    justify-content: flex-start;
+    height: 280vh;
     flex-wrap: nowrap;
-    justify-content: center;
 
     h2 {
       font-size: 30px;
