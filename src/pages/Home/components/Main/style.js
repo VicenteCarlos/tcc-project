@@ -207,6 +207,7 @@ const Container_6 = styled.section`
   background-color: white;
   color: black;
   padding-top: 70px;
+  height: 100vh;
 
   h2 {
     font-size: 40px;
