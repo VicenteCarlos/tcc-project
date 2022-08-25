@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MediaQuery } from "../../../../assets/mocks";
 
 const FooterStyled = styled.footer`
   background-color: #141414;
@@ -33,6 +34,14 @@ const FooterStyled = styled.footer`
 
   span {
       margin-right: 30px;
+  }
+
+  ${MediaQuery.mobile_320} {
+    justify-content: center;
+
+    span {
+      display: none;
+    }
   }
 `;
 
