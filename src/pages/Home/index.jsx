@@ -5,8 +5,8 @@ import { Main } from "./components/Main";
 const Home = () => (
   <>
     <Header />
-    <Main />
-    <Footer />
+    {/* <Main />
+    <Footer /> */}
   </>
 );
 
