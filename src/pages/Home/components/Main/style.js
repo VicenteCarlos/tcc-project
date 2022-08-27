@@ -8,6 +8,7 @@ const MainStyled = styled.main`
 const Container_1 = styled.section`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 10.1%;
   margin-top: 50px;
 
@@ -46,11 +47,11 @@ const Container_1 = styled.section`
   }
 
   .rigth-part {
-    margin-right: 15%;
+    margin-right: 5%;
 
     img {
-      width: 350px;
-      height: 350px;
+      width: 600px;
+      height: 550px;
       border-radius: 100%;
       margin-bottom: 25%;
     }
