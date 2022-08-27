@@ -141,7 +141,7 @@ const HeaderStyled = styled.header`
     }
 
     button {
-      width: 90px;
+      width: 50px;
       height: 90;
       margin-bottom: 20px;
     }
@@ -203,7 +203,7 @@ const HeaderStyled = styled.header`
 
 
     .containerButton {
-      width: 500px;
+      width: 300px;
       margin-bottom: 12.3px;
       display: flex;
       justify-content: center;

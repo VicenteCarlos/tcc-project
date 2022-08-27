@@ -47,10 +47,10 @@ const Container_1 = styled.section`
   }
 
   .rigth-part {
-    margin-right: 5%;
+    margin-right: 15%;
 
     img {
-      width: 600px;
+      width: 650px;
       height: 550px;
       border-radius: 100%;
       margin-bottom: 25%;
@@ -584,7 +584,7 @@ const Container_5 = styled.section`
 
     .container {
       margin: 40px 0;
-      width: 100vw;
+      width: 50%;
 
       .content {
         flex-direction: column;
