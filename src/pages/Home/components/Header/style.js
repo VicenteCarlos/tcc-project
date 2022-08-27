@@ -46,8 +46,7 @@ const HeaderStyled = styled.header`
 
       li:hover {
         transition: 0.7s;
-        color: white;
-        background-color: #52b788;
+        color: #008742;
         cursor: pointer;
       }
     }

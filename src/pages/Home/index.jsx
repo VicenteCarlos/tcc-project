@@ -5,9 +5,9 @@ import { ModalProvider } from "../../contexts/ModalProvider";
 
 const Home = () => (
   <ModalProvider>
-    {/* <Header /> */}
+    <Header />
     <Main />
-    {/* <Footer /> */}
+    <Footer />
   </ModalProvider>
 );
 
