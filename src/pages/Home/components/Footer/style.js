@@ -5,7 +5,7 @@ const FooterStyled = styled.footer`
   background-color: #141414;
   color: white;
   height: 10vh;
-  display: flex;
+  display: ${props => props.isOpenModal ? "none" : "flex"};
   justify-content: space-between;
   align-items: center;
 
@@ -43,6 +43,34 @@ const FooterStyled = styled.footer`
       display: none;
     }
   }
+
+  ${MediaQuery.mobile_768} {
+    height: 20vh;
+
+    figure {
+      img {
+        width: 100px;
+        height: 110px;
+      }
+
+      figcaption {
+        font-size: 30px;
+      }
+    }    
+  }
+
+  ${MediaQuery.mobile_1200} {
+      figure {
+        img {
+          width: 150px;
+          height: 150px;
+        }
+
+        figcaption {
+          font-size: 50px;
+        }
+      }
+    }
 `;
 
 export { FooterStyled };

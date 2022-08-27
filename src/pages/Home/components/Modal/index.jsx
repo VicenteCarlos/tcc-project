@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import { listData } from "../../../../../../assets/mocks";
+import { listData } from "../../../../assets/mocks";
+import { useModalProvider } from "../../../../contexts/ModalProvider";
 import { DivSectionStyled } from "./style";
 import { variants } from "./variants";
 
-const Modal = ({ isOpen, setIsOpen }) => {
-  const closeModal = () => setIsOpen(!isOpen);
+const Modal = () => {
+  const { closeModal } = useModalProvider();
 
   return (
     <DivSectionStyled

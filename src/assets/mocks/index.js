@@ -72,6 +72,7 @@ const MediaQuery = {
   mobile_320: "@media only screen and (min-width: 320px)",
   mobile_768: "@media only screen and (min-width: 768px)",
   mobile_1200: "@media only screen and (min-width: 1200px)",
+  mobile_1400: "@media only screen and (min-width: 1400px)",
   mobile_1600: "@media only screen and (min-width: 1600px)",
   mobile_1920: "@media only screen and (min-width: 1920px)",
 };

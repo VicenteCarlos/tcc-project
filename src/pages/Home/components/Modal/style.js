@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { MediaQuery } from "../../../../../../assets/mocks";
+import { MediaQuery } from "../../../../assets/mocks";
 
 const DivSectionStyled = styled.div`
   display: flex;

@@ -136,9 +136,14 @@ const HeaderStyled = styled.header`
       }
     }
 
+    nav, .containerButton {
+      display: none;
+    }
+
     button {
       width: 90px;
-      height: 90px;
+      height: 90;
+      margin-bottom: 20px;
     }
   }
 
@@ -159,7 +164,7 @@ const HeaderStyled = styled.header`
       }
 
       figcaption {
-        font-size: 35px;
+        font-size: 55px;
       }
     }
 
@@ -173,13 +178,13 @@ const HeaderStyled = styled.header`
       padding: 0;
 
       img {
-        width: 95px;
-        height: 95px;
+        width: 90px;
+        height: 90px;
       }
 
       figcaption {
         font-size: 38px;
-        width: 200px;
+        width: 500px;
       }
     }
 
@@ -187,28 +192,40 @@ const HeaderStyled = styled.header`
       display: initial;
 
       ul {
+        padding: 0;
+        padding-right: 100px;
+
         li {
-          font-size: 23px;
+          font-size: 27px;
         }
       }
     }
 
+
     .containerButton {
       width: 500px;
-      margin-bottom: 26.5px;
+      margin-bottom: 12.3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       #login,
       #register {
         display: initial;
+        font-size: 24px;
       }
 
       #register {
         width: 150px;
-        height: 50px;
+        height: 80px;
+        padding: 05px;
+        margin: 0;
+    
       }
 
       #login {
-        padding-left: 90px;
+        padding-right: 90px;
+  
       }
     }
 
@@ -225,9 +242,20 @@ const HeaderStyled = styled.header`
       }
 
       figcaption {
-        font-size: 21px;
+        font-size: 36px;
         width: 400px;
       }
+    }
+
+    nav {
+      width: 300px;
+      ul {
+        display: flex;
+      }
+    }
+
+    button {
+      display: none;
     }
   }
 `;
