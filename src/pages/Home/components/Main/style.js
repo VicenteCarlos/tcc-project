@@ -702,11 +702,13 @@ const Container_5 = styled.section`
     }
 
     .container {
+      width: 80vw;
+
       .content {
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        width: 60%;
+        width: 80vw;
 
         section {
           height: 45vh;
@@ -730,6 +732,10 @@ const Container_5 = styled.section`
 
       .content-2 {
         display: initial;
+        
+        img {
+          width: 40vw;
+        }
       }
     }
   }
