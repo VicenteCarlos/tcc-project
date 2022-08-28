@@ -735,6 +735,7 @@ const Container_5 = styled.section`
         
         img {
           width: 40vw;
+          
         }
       }
     }
