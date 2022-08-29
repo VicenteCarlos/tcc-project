@@ -22,7 +22,7 @@ const Header = () => {
           alt="Logo Money's X"
         />
         <figcaption>
-          Money's <strong>X</strong>
+          Money <strong>X</strong>
         </figcaption>
       </motion.figure>
       <motion.nav variants={variantsUl} initial="initial" animate="visible">

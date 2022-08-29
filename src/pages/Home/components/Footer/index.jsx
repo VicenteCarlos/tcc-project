@@ -13,7 +13,7 @@ const Footer = () => {
           alt="Logo Money's X"
         />
         <figcaption>
-          Money's <strong>X</strong>
+          Money <strong>X</strong>
         </figcaption>
       </figure>
       <span>© 2022 Money'x Sistema de Gestão Financeiro Pessoal</span>
