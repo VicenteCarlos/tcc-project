@@ -2,12 +2,13 @@ import styled from "styled-components";
 import { MediaQuery } from "../../../../assets/mocks";
 
 const MainStyled = styled.main`
-  display: ${props => props.isOpenModal ? "none" : "initial"}
-`
+  display: ${(props) => (props.isOpenModal ? "none" : "initial")};
+`;
 
 const Container_1 = styled.section`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 10.1%;
   margin-top: 50px;
 
@@ -49,16 +50,17 @@ const Container_1 = styled.section`
     margin-right: 15%;
 
     img {
-      width: 350px;
-      height: 350px;
+      width: 600px;
+      height: 550px;
       border-radius: 100%;
       margin-bottom: 25%;
     }
   }
 
   ${MediaQuery.mobile_320} {
-    height: 70vh;
-    margin:  0;
+    height: 90%;
+    padding-bottom: 2rem;
+    margin: 0;
 
     .left-part {
       display: flex;
@@ -78,7 +80,6 @@ const Container_1 = styled.section`
         text-align: center;
         margin-top: 30px;
       }
-
     }
     .rigth-part {
       display: none;
@@ -86,7 +87,7 @@ const Container_1 = styled.section`
   }
 
   ${MediaQuery.mobile_768} {
-    height: 80vh;
+    height: 80%;
 
     .left-part {
       h1 {
@@ -106,9 +107,8 @@ const Container_1 = styled.section`
     }
   }
 
-  ${MediaQuery.mobile_1200
-  } {
-    height: 80vh;
+  ${MediaQuery.mobile_1200} {
+    height: 100%;
 
     .left-part {
       h1 {
@@ -128,32 +128,47 @@ const Container_1 = styled.section`
     }
   }
 
-  ${MediaQuery.mobile_1200
-  } {
-    height: 100vh;
-  }
+  ${MediaQuery.mobile_1600} {
+    height: 100%;
+    padding: 5rem;
 
-  ${MediaQuery.mobile_1920
-  } {
     .left-part {
-      
       h1 {
-        font-size: 55px;
-        text-align: left;
-        line-height: 120px;
+        font-size: 65px;
+        line-height: 140px;
       }
 
       p {
-        font-size: 25px;
+        font-size: 35px;
+        line-height: 70px;
+      }
+
+      button {
+        font-size: 30px;
+        padding: 25px;
+      }
+    }
+  }
+
+  ${MediaQuery.mobile_1920} {
+    .left-part {
+      h1 {
+        font-size: 55px;
+        text-align: left;
+        line-height: 110px;
+      }
+
+      p {
+        font-size: 30px;
         line-height: 70px;
         text-align: left;
-
       }
 
       button {
         font-size: 30px;
         padding: 25px;
         margin-right: 37%;
+        margin-bottom: 4rem;
       }
     }
 
@@ -169,7 +184,7 @@ const Container_2 = styled.section`
   justify-content: center;
   align-items: center;
   background-color: white;
-  height: 60vh;
+  height: 60%;
 
   h2 {
     color: black;
@@ -186,7 +201,7 @@ const Container_2 = styled.section`
   }
 
   ${MediaQuery.mobile_320} {
-    height: 90vh;
+    height: 90%;
     justify-content: flex-start;
 
     h2 {
@@ -202,7 +217,7 @@ const Container_2 = styled.section`
   }
 
   ${MediaQuery.mobile_768} {
-    height: 55vh;
+    height: 55%;
 
     h2 {
       font-size: 40px;
@@ -215,7 +230,7 @@ const Container_2 = styled.section`
   }
 
   ${MediaQuery.mobile_1200} {
-    height: 70vh;
+    height: 70%;
 
     h2 {
       font-size: 60px;
@@ -227,11 +242,12 @@ const Container_2 = styled.section`
   }
 
   ${MediaQuery.mobile_1600} {
-    height: 75vh;
+    height: 75%;
     display: flex;
     justify-content: flex-start;
     margin-top: 40px;
     align-items: center;
+    padding: 5rem;
 
     h2 {
       font-size: 60px;
@@ -250,7 +266,7 @@ const Container_2 = styled.section`
 `;
 
 const Container_3 = styled.section`
-  height: 70vh;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,7 +280,6 @@ const Container_3 = styled.section`
   ${MediaQuery.mobile_320} {
     display: none;
   }
-  
 `;
 
 const Container_4 = styled.section`
@@ -273,7 +288,8 @@ const Container_4 = styled.section`
   justify-content: center;
   align-items: center;
   background-color: #1e1d1d;
-  height: 80vh;
+  height: 80%;
+  padding: 5rem;
 
   div {
     display: flex;
@@ -334,14 +350,14 @@ const Container_4 = styled.section`
   }
 
   ${MediaQuery.mobile_320} {
-    height: 360vh;
+    height: 360%;
 
     div {
       flex-direction: column;
 
       section {
         width: 80vw;
-        height: 70vh;
+        height: 55vh;
         margin: 20px 0;
 
         h3 {
@@ -356,53 +372,52 @@ const Container_4 = styled.section`
       }
 
       .section-1 {
-          p {
-            font-size: 15px;
-          }
+        p {
+          font-size: 15px;
         }
+      }
     }
   }
 
   ${MediaQuery.mobile_768} {
-    height: 250vh;
+    height: 250%;
 
     div {
       section {
-        height: 55vh;
-        width: 60vw;
+        height: 27%;
+        width: 30vw;
+      }
+      img {
+        width: 40px;
+        height: 40px;
+      }
 
-        img {
-          width: 90px;
-          height: 90px;
-        }
+      h3 {
+        font-size: 25px;
+      }
 
-        h3 {
-          font-size: 35px;
-        }
+      p {
+        font-size: 20px;
+      }
 
-        p {
-          font-size: 25px;
-        }
-     }
-
-     .section-1 {
+      .section-1 {
         p {
           font-size: 22px;
         }
-     }
+      }
     }
 
     button {
       font-size: 25px;
-     }
+    }
   }
 
   ${MediaQuery.mobile_1200} {
-    height: 330vh;
+    height: 330%;
 
     div {
       section {
-        height: 65vh;
+        height: 65%;
         width: 60vw;
 
         img {
@@ -417,13 +432,13 @@ const Container_4 = styled.section`
         p {
           font-size: 35px;
         }
-     }
+      }
 
-     .section-1 {
+      .section-1 {
         p {
           font-size: 32px;
         }
-     }
+      }
     }
 
     button {
@@ -431,14 +446,14 @@ const Container_4 = styled.section`
       width: 500px;
       height: 150px;
       padding: 35px;
-     }
+    }
   }
 
   ${MediaQuery.mobile_1600} {
     div {
       section {
-        height: 70vh;
-        width: 50vw;
+        height: 80vh;
+        width: 40vw;
 
         img {
           width: 140px;
@@ -452,13 +467,13 @@ const Container_4 = styled.section`
         p {
           font-size: 35px;
         }
-     }
+      }
 
-     .section-1 {
+      .section-1 {
         p {
           font-size: 32px;
         }
-     }
+      }
     }
 
     button {
@@ -466,11 +481,11 @@ const Container_4 = styled.section`
       width: 500px;
       height: 150px;
       padding: 35px;
-     }
+    }
   }
 
   ${MediaQuery.mobile_1920} {
-    height: 100vh;
+    height: 100%;
 
     div {
       flex-direction: row;
@@ -492,13 +507,13 @@ const Container_4 = styled.section`
         p {
           font-size: 23px;
         }
-     }
+      }
 
-     .section-1 {
+      .section-1 {
         p {
           font-size: 22px;
         }
-     }
+      }
     }
 
     button {
@@ -506,7 +521,7 @@ const Container_4 = styled.section`
       width: 400px;
       height: 100px;
       padding: 5px;
-     }
+    }
   }
 `;
 
@@ -524,6 +539,8 @@ const Container_5 = styled.section`
 
   .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
 
     .content {
@@ -572,7 +589,7 @@ const Container_5 = styled.section`
 
   ${MediaQuery.mobile_320} {
     justify-content: flex-start;
-    height: 280vh;
+    height: 280%;
     flex-wrap: nowrap;
 
     h2 {
@@ -583,15 +600,15 @@ const Container_5 = styled.section`
 
     .container {
       margin: 40px 0;
-      width: 100vw;
+      width: 50%;
 
       .content {
         flex-direction: column;
         margin: 0;
 
         section {
-          width: 80vw;
-          height: 350px;
+          width: 70vw;
+          height: 370px;
           margin: 20px auto;
 
           h3 {
@@ -611,46 +628,46 @@ const Container_5 = styled.section`
   }
 
   ${MediaQuery.mobile_768} {
-    height: 185vh;
+    height: 185%;
 
     .container {
       .content {
         section {
-          height: 40vh;
-          width: 60vw;
+          height: 23%;
+          width: 30vw;
+          margin: 40px 40px;
 
           img {
-            width: 90px;
-            height: 90px;
+            width: 40px;
+            height: 40px;
           }
 
-        h3 {
-          font-size: 35px;
-        }
+          h3 {
+            font-size: 25px;
+          }
 
-        p {
-          font-size: 25px;
+          p {
+            font-size: 20px;
+          }
         }
-       }
       }
     }
   }
 
   ${MediaQuery.mobile_1200} {
-    height: 320vh;
+    height: 320%;
 
     h2 {
       font-size: 55px;
     }
-   
+
     .container {
       justify-content: center;
       align-items: center;
 
       .content {
-
         section {
-          height: 65vh;
+          height: 65%;
           width: 60vw;
 
           img {
@@ -659,13 +676,13 @@ const Container_5 = styled.section`
           }
 
           h3 {
-          font-size: 55px;
-        }
+            font-size: 55px;
+          }
 
-        p {
-          font-size: 35px;
+          p {
+            font-size: 35px;
+          }
         }
-       }
       }
     }
   }
@@ -681,7 +698,7 @@ const Container_5 = styled.section`
         align-items: center;
 
         section {
-          height: 65vh;
+          height: 65%;
           width: 50vw;
 
           img {
@@ -690,31 +707,45 @@ const Container_5 = styled.section`
           }
 
           h3 {
-          font-size: 55px;
-        }
+            font-size: 55px;
+          }
 
-        p {
-          font-size: 35px;
+          p {
+            font-size: 35px;
+          }
         }
-       }
+      }
+    }
+  }
+
+  ${MediaQuery.mobile_1600} {
+    .container {
+      .content {
+        width: 80vw;
+
+        section {
+          height: 80vh;
+        width: 40vw;
+        }
       }
     }
   }
 
   ${MediaQuery.mobile_1920} {
-    height: 130vh;
+    height: 130%;
 
     h2 {
       text-align: center;
     }
 
     .container {
+      width: 80vw;
 
       .content {
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        width: 60%;
+        width: 80vw;
 
         section {
           height: 45vh;
@@ -733,11 +764,15 @@ const Container_5 = styled.section`
           p {
             font-size: 23px;
           }
-       }
+        }
       }
 
       .content-2 {
         display: initial;
+
+        img {
+          width: 40vw;
+        }
       }
     }
   }
@@ -763,7 +798,7 @@ const Container_6 = styled.section`
 
     section {
       width: 14vw;
-      height: 55vh;
+      height: 55%;
       margin: 0 35px;
       display: flex;
       justify-content: flex-start;
@@ -820,7 +855,7 @@ const Container_6 = styled.section`
   }
 
   ${MediaQuery.mobile_320} {
-    height: 340vh;
+    height: 340%;
 
     h2 {
       text-align: center;
@@ -837,121 +872,120 @@ const Container_6 = styled.section`
   }
 
   ${MediaQuery.mobile_768} {
-    height: 360vh;
+    height: 360%;
 
     h2 {
       margin-top: 50px;
       font-weight: bold;
     }
 
-   .container {
-    section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 130px 0;
+    .container {
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 130px 0;
 
-      img {
-        width: 500px;
-        height: 350px;
-      }
+        img {
+          width: 500px;
+          height: 350px;
+        }
 
-      h3 {
-        font-size: 40px;
-      }
+        h3 {
+          font-size: 40px;
+        }
 
+        p {
+          font-size: 30px;
+          text-align: center;
+        }
 
-      p{
-        font-size: 30px;
-        text-align: center
-      }
-
-      button {
-        font-size: 35px;
+        button {
+          font-size: 35px;
+        }
       }
     }
-   }
   }
 
   ${MediaQuery.mobile_1200} {
-    height: 510vh;
+    height: 510%;
 
     h2 {
       font-size: 65px;
     }
 
-   .container {
-    section {
-      margin: 290px 0;
+    .container {
+      section {
+        margin: 290px 0;
 
-      img {
-        width: 600px;
-        height: 550px;
-      }
+        img {
+          width: 600px;
+          height: 550px;
+        }
 
-      h3 {
-        font-size: 60px;
-      }
+        h3 {
+          font-size: 60px;
+        }
 
+        p {
+          font-size: 40px;
+        }
 
-      p{
-        font-size: 40px;
-      }
+        h3,
+        p {
+          text-align: center;
+        }
 
-     h3, p {
-      text-align: center;
-     }
-
-      button {
-        margin-top: 20px;
-        font-size: 45px;
+        button {
+          margin-top: 20px;
+          font-size: 45px;
+        }
       }
     }
-   }
   }
 
   ${MediaQuery.mobile_1400} {
-    height: 580vh;
+    height: 580%;
   }
 
   ${MediaQuery.mobile_1920} {
-    height: 130vh;
+    height: 130%;
 
     h2 {
       font-size: 65px;
     }
 
-   .container {
-    flex-direction: row;
+    .container {
+      flex-direction: row;
 
-    section {
-      margin: 270px 40px;
-      width: 350px;
+      section {
+        margin: 270px 40px;
+        width: 350px;
 
-      img {
-        width: 600px;
-        height: 550px;
-      }
+        img {
+          width: 600px;
+          height: 550px;
+        }
 
-      h3 {
-        font-size: 40px;
-      }
+        h3 {
+          font-size: 40px;
+        }
 
+        p {
+          font-size: 28px;
+        }
 
-      p{
-        font-size: 28px;
-      }
+        h3,
+        p {
+          text-align: center;
+        }
 
-     h3, p {
-      text-align: center;
-     }
-
-      button {
-        margin-top: 20px;
-        font-size: 25px;
+        button {
+          margin-top: 20px;
+          font-size: 25px;
+        }
       }
     }
-   }
   }
 `;
 

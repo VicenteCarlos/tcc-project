@@ -46,8 +46,7 @@ const HeaderStyled = styled.header`
 
       li:hover {
         transition: 0.7s;
-        color: white;
-        background-color: #52b788;
+        color: #008742;
         cursor: pointer;
       }
     }
@@ -141,7 +140,7 @@ const HeaderStyled = styled.header`
     }
 
     button {
-      width: 90px;
+      width: 50px;
       height: 90;
       margin-bottom: 20px;
     }
@@ -203,7 +202,7 @@ const HeaderStyled = styled.header`
 
 
     .containerButton {
-      width: 500px;
+      width: 300px;
       margin-bottom: 12.3px;
       display: flex;
       justify-content: center;
