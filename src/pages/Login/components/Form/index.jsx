@@ -25,7 +25,7 @@ const Form = () => {
       initial="hidden"
     onSubmit={handleSubmit(submitForm)}>
       <span>
-        <motion.h2 variants={variants} initial="hidden" animate="visible">Registre-se</motion.h2>
+        <motion.h2 variants={variants} initial="hidden" animate="visible">Login</motion.h2>
       </span>
       <fieldset className="inputContainer">
         <TextField
