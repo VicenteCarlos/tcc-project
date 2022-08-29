@@ -7,7 +7,7 @@ const DivSectionStyled = styled.div`
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  width: 100vw;
+  width: 98vw;
   background-color: #161a1d;
 
   .content {
