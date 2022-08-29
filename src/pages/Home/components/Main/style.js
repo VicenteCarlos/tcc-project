@@ -151,6 +151,8 @@ const Container_1 = styled.section`
   }
 
   ${MediaQuery.mobile_1920} {
+    height: 90vh;
+
     .left-part {
       h1 {
         font-size: 55px;

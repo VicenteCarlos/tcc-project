@@ -5,7 +5,7 @@ import { DivSectionStyled } from "./style";
 import { variants } from "./variants";
 
 const Modal = () => {
-  const { closeModal } = useModalProvider();
+  const { closeOrOpenModal } = useModalProvider();
 
   return (
     <DivSectionStyled
@@ -24,7 +24,7 @@ const Modal = () => {
       <div className="content-2">
         <button id="login">Login</button>
         <button id="register">Criar conta</button>
-        <button id="close" onClick={closeModal}>
+        <button id="close" onClick={closeOrOpenModal}>
           Fechar
         </button>
       </div>
