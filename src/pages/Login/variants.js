@@ -4,7 +4,7 @@ const variants_1 = {
     },
     visible: {
         x: "0vw",
-        transition: { type: "spring", stiffness: 30, duration: 1 }
+        transition: { type: "spring", stiffness: 30, duration: 1.5 }
     }
 }
 
@@ -14,7 +14,7 @@ const variants_2 = {
     },
     visible: {
         x: "0vw",
-        transition: { type: "spring", stiffness: 30, duration: 1 }
+        transition: { type: "spring", stiffness: 30, duration: 1.5 }
     }
 }
 
