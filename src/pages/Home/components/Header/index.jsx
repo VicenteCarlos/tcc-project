@@ -3,9 +3,15 @@ import { useModalProvider } from "../../../../contexts/ModalProvider";
 import { Modal } from "../Modal";
 import { HeaderStyled } from "./style";
 import { variantsLogo, variantsUl, variantsButton } from "./variants";
+import { useNavigate } from "react-router-dom"
 
 const Header = () => {
   const { isOpenModal, setIsOpenModal } = useModalProvider();
+  const navigate = useNavigate()
+
+  const loginRouter = () => navigate("/login")
+  const registerRouter = () => navigate("/register")
+
 
   return isOpenModal ? (
     <Modal
@@ -37,8 +43,8 @@ const Header = () => {
         initial="initial"
         animate="visible"
       >
-        <button id="login">Login </button>
-        <button id="register">Criar conta</button>
+        <button id="login" onClick={loginRouter}>Login </button>
+        <button id="register" onClick={registerRouter}>Criar conta</button>
       </motion.div>
       <motion.button
         initial={{ opacity: 0 }}
