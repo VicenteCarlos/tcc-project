@@ -20,17 +20,17 @@ const FormStyled = styled.form`
     margin-top: 40px;
 
     div {
-      width: 13.9vw;
+      width: 11.5vw;
       margin-top: 30px;
     }
 
     .name {
-        margin-left: -8%;
+        margin-left: -22.3%;
     }
 
     .surname {
-        margin-left: -1%;
-        width: 10vw;
+        margin-left: 5.5%;
+        width: 5vw;
     }
 
     div,
@@ -43,10 +43,11 @@ const FormStyled = styled.form`
     border: none;
     display: flex;
     flex-direction: column;
+    margin: 0;
 
     div {
       margin: 5px 0;
-      width: 28vw;
+      width: 24.5vw;
     }
   }
 
