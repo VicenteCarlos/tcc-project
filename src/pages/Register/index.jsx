@@ -27,7 +27,7 @@ const Register = () => {
         <div className="divFormContainer">
           <Form />
           <motion.span variants={variants} initial="hidden" animate="visible">
-            Não possui uma conta? <Link to="/login">Login</Link>
+            Possui uma conta? <Link to="/login">Login</Link>
           </motion.span>
         </div>
       </motion.section>
