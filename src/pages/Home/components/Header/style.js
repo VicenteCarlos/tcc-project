@@ -6,6 +6,8 @@ const HeaderStyled = styled.header`
   justify-content: space-between;
   background-color: #161a1d;
   height: 15vh;
+  position: fixed;
+  width: 100vw;
 
   figure {
     display: flex;
@@ -202,7 +204,7 @@ const HeaderStyled = styled.header`
 
 
     .containerButton {
-      width: 300px;
+      width: 500px;
       margin-bottom: 12.3px;
       display: flex;
       justify-content: center;
@@ -215,15 +217,15 @@ const HeaderStyled = styled.header`
       }
 
       #register {
-        width: 150px;
+        width: 160px;
         height: 80px;
         padding: 05px;
-        margin: 0;
+        margin-right: 2rem;
     
       }
 
       #login {
-        padding-right: 90px;
+        padding-right: 30px;
   
       }
     }
