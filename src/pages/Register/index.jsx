@@ -14,7 +14,7 @@ const Register = () => {
         className="imgLeft"
       >
         <img
-          src="https://cdn.discordapp.com/attachments/1008067136872255560/1011985227222110249/Group_56071.png"
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
           alt="img: Transforme o futuro do seu dinheiro."
         />
       </motion.section>
