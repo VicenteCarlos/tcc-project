@@ -51,7 +51,7 @@ const Container_1 = styled.section`
 
     img {
       width: 600px;
-      height: 550px;
+      height: 450px;
       border-radius: 100%;
       margin-bottom: 25%;
     }
@@ -189,7 +189,6 @@ const Container_2 = styled.section`
   h2 {
     color: black;
     font-weight: bold;
-    margin-top: 20px;
   }
 
   p {
@@ -259,9 +258,7 @@ const Container_2 = styled.section`
   }
 
   ${MediaQuery.mobile_1920} {
-    h2 {
-      margin-top: 150px;
-    }
+    height: 70vh;
   }
 `;
 
@@ -797,7 +794,7 @@ const Container_6 = styled.section`
     margin-top: 50px;
 
     section {
-      width: 14vw;
+      width: 5vw;
       height: 55%;
       margin: 0 35px;
       display: flex;
@@ -959,12 +956,12 @@ const Container_6 = styled.section`
       flex-direction: row;
 
       section {
-        margin: 270px 40px;
+        margin: 150px 40px;
         width: 350px;
 
         img {
           width: 600px;
-          height: 550px;
+          height: 300px;
         }
 
         h3 {
