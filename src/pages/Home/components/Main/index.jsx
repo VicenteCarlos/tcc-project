@@ -23,6 +23,7 @@ const Main = () => {
         variants={variants}
         initial="hidden"
         animate="visible"
+        text="data-aos=flip-up"
       >
         <div className="left-part">
           <h1>Transforme o futuro do seu dinheiro</h1>

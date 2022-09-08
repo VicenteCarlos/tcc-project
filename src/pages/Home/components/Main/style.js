@@ -797,7 +797,7 @@ const Container_6 = styled.section`
 
     section {
       width: 5vw;
-      height: 55%;
+      height: 700px;
       margin: 0 35px;
       display: flex;
       justify-content: flex-start;

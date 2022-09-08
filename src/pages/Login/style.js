@@ -58,7 +58,7 @@ const MainStyled = styled.main`
 
   ${MediaQuery.mobile_1200} {
     .imgLeft {
-      display: none;
+      display: initial;
     }
   }
 `;

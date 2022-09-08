@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MediaQuery } from "../../assets/mocks"
 
 const MainStyled = styled.main`
   display: flex;
@@ -57,7 +58,7 @@ const MainStyled = styled.main`
 
   ${MediaQuery.mobile_1200} {
     .imgLeft {
-      display: none;
+      display: initial;
     }
   }
 `;

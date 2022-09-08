@@ -4,7 +4,7 @@ import { FooterStyled } from "./style";
 
 const Footer = () => {
   const { isOpenModal } = useModalProvider();
-
+  
   return (
     <FooterStyled isOpenModal={isOpenModal}>
       <figure>
