@@ -51,4 +51,10 @@ const Container_2 = styled.section`
     }
 `
 
-export { MainStyled, Container_1, Container_2 }
+const Container_3 = styled.section`
+`
+
+const Container_4 = styled.section`
+`
+
+export { MainStyled, Container_1, Container_2, Container_3, Container_4 }
