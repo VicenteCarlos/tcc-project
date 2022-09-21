@@ -47,8 +47,6 @@ const HeaderStyled = styled.header`
       }
 
       li:hover {
-        transition: 0.7s;
-        color: #008742;
         cursor: pointer;
       }
     }
@@ -66,11 +64,6 @@ const HeaderStyled = styled.header`
       cursor: pointer;
     }
 
-    #login:hover {
-      transition: 0.7s;
-      color: #64b977;
-    }
-
     #register {
       border: 2px solid white;
       border-radius: 12px;
@@ -78,9 +71,8 @@ const HeaderStyled = styled.header`
     }
 
     #register:hover {
-      transition: 0.7s;
+      transition: 1s;
       border: 2px solid #64b977;
-      color: #64b977;
     }
   }
 

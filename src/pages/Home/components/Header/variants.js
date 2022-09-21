@@ -18,6 +18,12 @@ const variantsUl = {
   }
 }
 
+const variantsColors = {
+  hover: {
+    color: "#008742"
+  }
+}
+
 const variantsButton = {
   initial: {
     x: "100vw"
@@ -28,4 +34,4 @@ const variantsButton = {
   },
 }
 
-export { variantsLogo, variantsUl, variantsButton };
+export { variantsLogo, variantsUl, variantsColors, variantsButton };

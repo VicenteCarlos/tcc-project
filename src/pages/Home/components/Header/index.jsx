@@ -2,20 +2,23 @@ import { motion } from "framer-motion";
 import { useModalProvider } from "../../../../contexts/ModalProvider";
 import { Modal } from "../Modal";
 import { HeaderStyled } from "./style";
-import { variantsLogo, variantsUl, variantsButton } from "./variants";
-import { useNavigate } from "react-router-dom"
+import {
+  variantsLogo,
+  variantsUl,
+  variantsButton,
+  variantsColors,
+} from "./variants";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const { isOpenModal, setIsOpenModal } = useModalProvider();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const loginRouter = () => navigate("/login")
-  const registerRouter = () => navigate("/register")
-
+  const loginRouter = () => navigate("/login");
+  const registerRouter = () => navigate("/register");
 
   return isOpenModal ? (
-    <Modal
-    />
+    <Modal />
   ) : (
     <HeaderStyled>
       <motion.figure
@@ -33,8 +36,12 @@ const Header = () => {
       </motion.figure>
       <motion.nav variants={variantsUl} initial="initial" animate="visible">
         <ul>
-          <li>Recursos</li>
-          <li>Aprenda</li>
+          <motion.li variants={variantsColors} whileHover="hover">
+            Recursos
+          </motion.li>
+          <motion.li variants={variantsColors} whileHover="hover">
+            Aprenda
+          </motion.li>
         </ul>
       </motion.nav>
       <motion.div
@@ -43,14 +50,28 @@ const Header = () => {
         initial="initial"
         animate="visible"
       >
-        <button id="login" onClick={loginRouter}>Login </button>
-        <button id="register" onClick={registerRouter}>Criar conta</button>
+        <motion.button
+          id="login"
+          variants={variantsColors}
+          whileHover="hover"
+          onClick={loginRouter}
+        >
+          Login{" "}
+        </motion.button>
+        <motion.button
+          id="register"
+          variants={variantsColors}
+          whileHover="hover"
+          onClick={registerRouter}
+        >
+          Criar conta
+        </motion.button>
       </motion.div>
       <motion.button
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 0.6 } }}
         onClick={() => {
-          setIsOpenModal(!isOpenModal)
+          setIsOpenModal(!isOpenModal);
         }}
       >
         <img src="https://img.icons8.com/cotton/72/menu.png" alt="menu" />
